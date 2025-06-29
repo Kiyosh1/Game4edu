@@ -23,8 +23,8 @@ var dialogs = []
 var processing_choice = false
 
 func _ready():
-	$AudioStreamPlayer.volume_db = -30
-	dialog_data = load_dialogue("res://assets/dialogs/test.json")
+	$AudioStreamPlayer.volume_db = -20
+	dialog_data = load_dialogue("res://scenes/VisualNovel/assets/dialogs/V2.json")
 	dialog_ui.choice_selected.connect(_on_choice_selected)
 	
 	var json_path = GlobalValues.dialog_json_file_path
@@ -41,13 +41,18 @@ func _input(event):
 		return
 		
 	if event.is_action_pressed("next_line"):
-		print("")
+		print("next line")
 		if dialog_ui.animate_text:
 			dialog_ui.skip_text_animation()
 		else:
+			print("next line afther")
+			
 			if dialog_index == dialogs.size() :
+				print("final")
 				get_tree().change_scene_to_file("res://level.tscn")
-			elif dialog_index == dialogs.size() - 1:
+			elif dialog_index == dialogs.size() - 1 :
+				if questions == 0:
+					get_tree().change_scene_to_file("res://level.tscn")
 				# Calcula porcentagem de acerto com proteção contra divisão por zero
 				
 				var percentual_acerto = 0.0
@@ -71,7 +76,7 @@ func _input(event):
 				dialog_ui.dialog.bbcode_enabled = true  # Ativa BBCode para rich text
 				dialog_ui.dialog.text = msg
 				dialog_ui.dialog.visible_ratio = 1  # Mostra todo o texto imediatamente
-				
+				dialog_index += 1
 			elif dialog_index < dialogs.size() - 1:
 				dialog_index += 1
 				process_line()
@@ -82,10 +87,11 @@ func _input(event):
 			process_line()
 
 func process_line():
-	print("questions:", questions)
-	print("questions_right:", questions_right)
-	var line_info = dialogs[dialog_index]
 	
+	var line_info = dialogs[dialog_index]
+	print("this is line")
+	print(line_info)
+	print(line_info.has("choices"))
 	if line_info.has("goto"):
 		var anchor_info = get_anchor_tag(line_info["goto"])
 		var new_index = anchor_info["new_index"]
@@ -95,15 +101,19 @@ func process_line():
 			process_line()
 		return
 
-	if line_info.has("anchor"):
+	elif line_info.has("anchor"):
 		if dialog_index < dialogs.size() - 1:
 			dialog_index += 1
 			process_line()
 		return
 		
-	if line_info.has("choices"):
+	elif line_info.has("choices"):
 		processing_choice = true
 		dialog_ui.display_choices(line_info)
+		
+	elif line_info.has("song"):
+		audioPlayer.play_sound[line_info['song']]
+		
 	else:
 		dialog_ui.change_line(line_info["char"], line_info["text"])
 		character.change_character(line_info["char"], line_info["mood"])
@@ -112,14 +122,9 @@ func get_anchor_tag(anchor: String) -> Dictionary:
 	for i in range(dialogs.size()):
 		if dialogs[i].has("anchor") and dialogs[i]["anchor"] == anchor:
 			var is_right = dialogs[i].get("isRight", false)
-			print("the question is", is_right)
 			if is_right:
-				print("got right")
 				questions_right += 1
-			else: 
-				print("got wrong")
 			return {"new_index": i, "is_right": is_right}
-	printerr("Error: Anchor not found -> " + anchor)
 	return {"new_index": -1, "is_right": false} 
 
 func load_dialogue(path: String) -> Dictionary:

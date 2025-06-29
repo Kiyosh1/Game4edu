@@ -1,0 +1,46 @@
+{
+  "background": 4,
+  "song": "padrão",
+  "dialogs": [
+    {
+      "char": "robot_2",
+      "mood": "alert",
+      "text": "Alerta. Tempestade solar de nível G5 atingiu a Base Lunar AlphaNet-7. Falhas críticas nos sistemas de rede e suporte vital."
+    },
+    {
+      "char": "Narrador",
+      "mood": "serious",
+      "text": "Você era só um estagiário em treinamento, revisando padrões de crimpagem na sala de simulação... agora, você é a única chance da tripulação sobreviver."
+    },
+    {
+      "char": "robot_2",
+      "mood": "normal",
+      "text": "Perdemos acesso aos sistemas físicos. Ativando robôs-técnicos autônomos conectados ao SnakeNet."
+    },
+    {
+      "char": "robot_2",
+      "mood": "normal",
+      "text": "Você os controlará remotamente — mas só conseguirão agir se os cabos forem montados corretamente, seguindo os padrões T568A e T568B."
+    },
+    {
+      "char": "robot_2",
+      "mood": "normal",
+      "text": "O terminal local está crimpado em T568B. Como a conexão é cross-over, você deve montar a outra ponta com o padrão T568A."
+    },
+    {
+      "char": "robot_2",
+      "mood": "normal",
+      "text": "Guie o robô pelo labirinto, colete os fios na ordem certa e finalize com o alicate de crimpagem. A sobrevivência depende disso."
+    },
+    {
+      "char": "Narrador",
+      "mood": "dramatic",
+      "text": "Você é o último fio entre a vida e o vazio."
+    },
+    {
+      "char": "robot_2",
+      "mood": "urgent",
+      "text": "Técnico Júnior: acesse o SnakeNet. Reconecte a base. Salve a missão."
+    }
+  ]
+}

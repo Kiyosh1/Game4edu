@@ -1,0 +1,146 @@
+{
+  "background": 4,
+  "song": "desafio",
+  "dialogs": [
+    {
+      "char": "robot_2",
+      "mood": "normal",
+      "text": "1. Pra que serve o cabeamento estruturado?"
+    },
+    {
+      "choices": [
+        {
+          "text": "Pra pendurar cabos nas paredes como decoração",
+          "goto": "q1_a"
+        },
+        {
+          "text": "Pra organizar os cabos de uma rede de forma padronizada",
+          "goto": "q1_b"
+        },
+        {
+          "text": "Pra deixar tudo bagunçado mesmo, é mais emocionante",
+          "goto": "q1_c"
+        }
+      ],
+      "id": "q1"
+    },
+
+    { "anchor": "q1_a", "isRight": false },
+    {
+      "char": "robot_2",
+      "mood": "sad",
+      "text": "❌ Hmmm... pendurar na parede até pode parecer criativo, mas não conecta nada! Bora focar na ordem e padrão pra manter a rede viva."
+    },
+    { "goto": "after_q1", "idBefore": "q1" },
+
+    { "anchor": "q1_b", "isRight": true },
+    {
+      "char": "robot_2",
+      "mood": "happy",
+      "text": "✅ Isso aí, técnico! 🛠️ Cabeamento estruturado é como dar um mapa pros dados: tudo organizado, funcional e sem bagunça."
+    },
+    { "goto": "after_q1", "idBefore": "q1" },
+
+    { "anchor": "q1_c", "isRight": false },
+    {
+      "char": "robot_2",
+      "mood": "angry",
+      "text": "❌ Bagunça? Isso aqui é rede profissional, não sala de adolescente! Organização é lei."
+    },
+    { "goto": "after_q1", "idBefore": "q1" },
+
+    { "anchor": "after_q1" },
+    {
+      "char": "robot_2",
+      "mood": "normal",
+      "text": "2. Qual desses cabos é o mais rápido em longas distâncias?"
+    },
+    {
+      "choices": [
+        { "text": "Cat5e", "goto": "q2_a" },
+        { "text": "Cat6", "goto": "q2_b" },
+        { "text": "Fibra óptica", "goto": "q2_c" }
+      ],
+      "id": "q2"
+    },
+
+    { "anchor": "q2_a", "isRight": false },
+    {
+      "char": "robot_2",
+      "mood": "sad",
+      "text": "❌ Hmm… o Cat5e e o Cat6 são bons, mas a fibra joga em outro campeonato. É tipo comparar carro com nave."
+    },
+    { "goto": "after_q2", "idBefore": "q2" },
+
+    { "anchor": "q2_b", "isRight": false },
+    {
+      "char": "robot_2",
+      "mood": "sad",
+      "text": "❌ Quase! O Cat6 é melhor que o Cat5e, mas ainda não chega aos pés da fibra óptica em distâncias longas."
+    },
+    { "goto": "after_q2", "idBefore": "q2" },
+
+    { "anchor": "q2_c", "isRight": true },
+    {
+      "char": "robot_2",
+      "mood": "happy",
+      "text": "✅ Boa, futuro engenheiro! A fibra é o foguete da rede — velocidade absurda e quase zero interferência, ideal pra conexões longas."
+    },
+    { "goto": "after_q2", "idBefore": "q2" },
+
+    { "anchor": "after_q2" },
+    {
+      "char": "robot_2",
+      "mood": "normal",
+      "text": "3. O que significa montar um cabo com padrão T568A?"
+    },
+    {
+      "choices": [
+        {
+          "text": "Seguir a sequência correta dos fiozinhos coloridos",
+          "goto": "q3_a"
+        },
+        {
+          "text": "Escolher a cor do cabo que mais combina com o teclado",
+          "goto": "q3_b"
+        },
+        {
+          "text": "Cortar todos os fios e torcer pra funcionar",
+          "goto": "q3_c"
+        }
+      ],
+      "id": "q3"
+    },
+
+    { "anchor": "q3_a", "isRight": true },
+    {
+      "char": "robot_2",
+      "mood": "happy",
+      "text": "✅ Acertou! Cada fio tem seu lugar certinho no conector RJ-45. Seguir o padrão garante que tudo funcione sem curto-circuito digital."
+    },
+    { "goto": "end", "idBefore": "q3" },
+
+    { "anchor": "q3_b", "isRight": false },
+    {
+      "char": "robot_2",
+      "mood": "sad",
+      "text": "❌ Ops! O padrão não é sobre a estética do cabo, é sobre seguir a ordem dos fios com precisão cirúrgica."
+    },
+    { "goto": "end", "idBefore": "q3" },
+
+    { "anchor": "q3_c", "isRight": false },
+    {
+      "char": "robot_2",
+      "mood": "angry",
+      "text": "❌ NÃO! Isso é receita pra desastre! Padrão existe pra evitar que a rede vire um Frankenstein de fios soltos."
+    },
+    { "goto": "end", "idBefore": "q3" },
+
+    { "anchor": "end" },
+    {
+      "char": "robot_2",
+      "mood": "normal",
+      "text": "Quiz completo! Vamos ver seu resultado..."
+    }
+  ]
+}

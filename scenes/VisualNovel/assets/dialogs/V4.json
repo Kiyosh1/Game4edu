@@ -1,0 +1,175 @@
+{
+  "background": 4,
+  "song": "desafio",
+  "dialogs": [
+    {
+      "char": "robot_2",
+      "mood": "normal",
+      "text": "1. O que o padrão T568A define?"
+    },
+    {
+      "choices": [
+        { "text": "A voltagem dos cabos", "goto": "q1_a" },
+        {
+          "text": "A ordem dos fios coloridos dentro do conector",
+          "goto": "q1_b"
+        },
+        { "text": "A cor do conector RJ-45", "goto": "q1_c" }
+      ],
+      "id": "q1"
+    },
+
+    { "anchor": "q1_a", "isRight": false },
+    {
+      "char": "robot_2",
+      "mood": "sad",
+      "text": "❌ Quase lá! Essa não é a resposta correta. Dá uma revisada no padrão — cada detalhe faz a diferença na rede!"
+    },
+    { "goto": "q2", "idBefore": "q1" },
+
+    { "anchor": "q1_b", "isRight": true },
+    {
+      "char": "robot_2",
+      "mood": "happy",
+      "text": "✅ Acertou, técnico! O padrão T568A (assim como o T568B) serve pra definir qual fio entra em qual posição do conector. Sem isso, é bagunça na rede."
+    },
+    { "goto": "q2", "idBefore": "q1" },
+
+    { "anchor": "q1_c", "isRight": false },
+    {
+      "char": "robot_2",
+      "mood": "sad",
+      "text": "❌ Quase lá! Essa não é a resposta correta. Dá uma revisada no padrão — cada detalhe faz a diferença na rede!"
+    },
+    { "goto": "q2", "idBefore": "q1" },
+
+    { "anchor": "q2" },
+    {
+      "char": "robot_2",
+      "mood": "normal",
+      "text": "2. Qual é a principal diferença entre T568A e T568B?"
+    },
+    {
+      "choices": [
+        { "text": "A cor externa do cabo", "goto": "q2_a" },
+        { "text": "A posição dos pares verde e laranja", "goto": "q2_b" },
+        { "text": "O tipo de plástico usado no conector", "goto": "q2_c" }
+      ],
+      "id": "q2_choices"
+    },
+
+    { "anchor": "q2_a", "isRight": false },
+    {
+      "char": "robot_2",
+      "mood": "sad",
+      "text": "❌ Resposta incorreta! Mas relaxa — errar faz parte. Bora pra próxima!"
+    },
+    { "goto": "q3", "idBefore": "q2_choices" },
+
+    { "anchor": "q2_b", "isRight": true },
+    {
+      "char": "robot_2",
+      "mood": "happy",
+      "text": "✅ A única diferença real entre os dois padrões é a posição dos pares verde e laranja. A sequência muda, mas o resto é igual!"
+    },
+    { "goto": "q3", "idBefore": "q2_choices" },
+
+    { "anchor": "q2_c", "isRight": false },
+    {
+      "char": "robot_2",
+      "mood": "sad",
+      "text": "❌ Resposta incorreta! Mas relaxa — errar faz parte. Bora pra próxima!"
+    },
+    { "goto": "q3", "idBefore": "q2_choices" },
+
+    { "anchor": "q3" },
+    {
+      "char": "robot_2",
+      "mood": "normal",
+      "text": "3. Se eu montar os dois lados do cabo com T568B, ele será..."
+    },
+    {
+      "choices": [
+        { "text": "Um cabo cross-over", "goto": "q3_a" },
+        { "text": "Um cabo straight-through", "goto": "q3_b" },
+        { "text": "Um cabo sem função", "goto": "q3_c" }
+      ],
+      "id": "q3_choices"
+    },
+
+    { "anchor": "q3_a", "isRight": false },
+    {
+      "char": "robot_2",
+      "mood": "sad",
+      "text": "❌ Eita! Não foi dessa vez. Presta atenção nos padrões usados em cada ponta do cabo."
+    },
+    { "goto": "q4", "idBefore": "q3_choices" },
+
+    { "anchor": "q3_b", "isRight": true },
+    {
+      "char": "robot_2",
+      "mood": "happy",
+      "text": "✅ Usar o mesmo padrão nas duas pontas (seja A ou B) cria um cabo straight-through, usado pra conectar dispositivos diferentes."
+    },
+    { "goto": "q4", "idBefore": "q3_choices" },
+
+    { "anchor": "q3_c", "isRight": false },
+    {
+      "char": "robot_2",
+      "mood": "sad",
+      "text": "❌ Eita! Não foi dessa vez. Presta atenção nos padrões usados em cada ponta do cabo."
+    },
+    { "goto": "q4", "idBefore": "q3_choices" },
+
+    { "anchor": "q4" },
+    {
+      "char": "robot_2",
+      "mood": "normal",
+      "text": "4. E se eu montar um lado com T568A e o outro com T568B?"
+    },
+    {
+      "choices": [
+        { "text": "Vai dar curto", "goto": "q4_a" },
+        { "text": "Vira um cabo cross-over", "goto": "q4_b" },
+        { "text": "Vira Wi-Fi", "goto": "q4_c" }
+      ],
+      "id": "q4_choices"
+    },
+
+    { "anchor": "q4_a", "isRight": false },
+    {
+      "char": "robot_2",
+      "mood": "sad",
+      "text": "❌ Errou, mas tá tudo certo! A diferença entre os padrões muda o tipo de conexão. Fica de olho nisso!"
+    },
+    { "goto": "final", "idBefore": "q4_choices" },
+
+    { "anchor": "q4_b", "isRight": true },
+    {
+      "char": "robot_2",
+      "mood": "happy",
+      "text": "✅ Esse é o famoso cross-over, usado quando você quer ligar dois dispositivos iguais, tipo PC com PC ou switch com switch direto."
+    },
+    { "goto": "final", "idBefore": "q4_choices" },
+
+    { "anchor": "q4_c", "isRight": false },
+    {
+      "char": "robot_2",
+      "mood": "sad",
+      "text": "❌ Errou, mas tá tudo certo! A diferença entre os padrões muda o tipo de conexão. Fica de olho nisso!"
+    },
+    { "goto": "final", "idBefore": "q4_choices" },
+
+    { "anchor": "final" },
+    {
+      "char": "robot_2",
+      "mood": "normal",
+      "text": "🚀 Top das galáxias! Agora que você entendeu o T568A e B, tá mais do que pronto pra entrar no labirinto da montagem."
+    },
+    {
+      "char": "robot_2",
+      "mood": "normal",
+      "text": "Lembra: cada nível vai testar se você realmente sabe a sequência dos fios. Montou errado? Vai ter que refazer. Montou certo? Crimpagem e conexão garantidas!"
+    }
+  ]
+}

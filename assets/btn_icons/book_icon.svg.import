@@ -3,15 +3,11 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://iujh7uo1xr1u"
-path="res://.godot/imported/book_icon.svg-945f55e7744d8eba1fbc86fa10ab6591.ctex"
-metadata={
-"vram_texture": false
-}
+valid=false
 
 [deps]
 
 source_file="res://assets/btn_icons/book_icon.svg"
-dest_files=["res://.godot/imported/book_icon.svg-945f55e7744d8eba1fbc86fa10ab6591.ctex"]
 
 [params]
 

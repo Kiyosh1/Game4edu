@@ -51,8 +51,8 @@ grow_vertical = 0
 
 [node name="Char" parent="CharLayer/Control" instance=ExtResource("3_sxcos")]
 unique_name_in_owner = true
-position = Vector2(0, -300)
-scale = Vector2(2, 2)
+position = Vector2(-500, -600)
+scale = Vector2(6, 6)
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 unique_name_in_owner = true

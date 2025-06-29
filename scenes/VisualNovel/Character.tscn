@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://cwhwk1thxxg3t"]
 
 [ext_resource type="Script" uid="uid://cb2mi8dt43n5c" path="res://scripts/VisualNovelScene/Character.gd" id="1_pkhve"]
-[ext_resource type="Texture2D" uid="uid://b7mlhus38hhpm" path="res://scenes/VisualNovel/assets/Chars/emi/angry.png" id="2_qftu8"]
+[ext_resource type="Texture2D" uid="uid://bdshumy73qh28" path="res://scenes/VisualNovel/assets/Chars/robot_2/01.png" id="2_qftu8"]
 
 [node name="Node2D" type="Node2D"]
 script = ExtResource("1_pkhve")

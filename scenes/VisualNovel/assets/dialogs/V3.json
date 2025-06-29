@@ -1,0 +1,31 @@
+{
+  "background": 4,
+  "song": "padrão",
+  "dialogs": [
+    {
+      "char": "robot_2",
+      "mood": "normal",
+      "text": "Aí, técnico em formação! 🧰 Você já deve ter visto um cabo de rede com uns fiozinhos coloridos dentro, né? Tipo aqueles que a gente usa pra ligar o PC no roteador."
+    },
+    {
+      "char": "robot_2",
+      "mood": "normal",
+      "text": "Mas montar um cabo de rede não é só sair enfiando fio aleatório no conector. Tem regra, tem padrão... e se você errar, a conexão vai pro limbo. 👻"
+    },
+    {
+      "char": "robot_2",
+      "mood": "normal",
+      "text": "Os dois padrões mais usados no mundo da rede são o T568A e o T568B. Eles dizem qual é a ordem dos fios lá dentro do conector RJ-45."
+    },
+    {
+      "char": "robot_2",
+      "mood": "normal",
+      "text": "Cada padrão tem sua sequência, e isso influencia na hora de conectar dispositivos — Tipo saber se vai usar um cabo straight-through ou cross-over."
+    },
+    {
+      "char": "robot_2",
+      "mood": "happy",
+      "text": "Quer saber se você tá pronto pra montar um cabo topzera? Bora testar! 💪"
+    }
+  ]
+}

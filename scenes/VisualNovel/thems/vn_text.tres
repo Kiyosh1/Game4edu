@@ -18,7 +18,7 @@ border_color = Color(0.859672, 0.820478, 0.287614, 1)
 
 [resource]
 Button/colors/font_pressed_color = Color(0.317672, 0.251205, 0.161776, 1)
-Button/font_sizes/font_size = 28
+Button/font_sizes/font_size = 38
 Button/styles/normal = SubResource("StyleBoxFlat_4gfgd")
 PanelContainer/styles/panel = SubResource("StyleBoxFlat_qyrhu")
 RichTextLabel/font_sizes/normal_font_size = 20

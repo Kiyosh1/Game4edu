@@ -1,0 +1,36 @@
+{
+  "background": 4,
+  "song": "padrão",
+  "dialogs": [
+    {
+      "char": "robot_2",
+      "mood": "normal",
+      "text": "Fala, futuro técnico de rede! 👷♂️💻 Antes de sair conectando tudo por aí, deixa eu te contar o que é esse tal de cabeamento estruturado."
+    },
+    {
+      "char": "robot_2",
+      "mood": "normal",
+      "text": "Imagina um lugar onde os cabos não estão jogados pelo chão como macarrão desorganizado 🍝... mas sim todos arrumadinhos, escondidos, passando por dutos, com cores padrão, seguindo normas. Isso é o cabeamento estruturado: a forma inteligente de montar uma rede!"
+    },
+    {
+      "char": "robot_2",
+      "mood": "normal",
+      "text": "Ele conecta computadores, impressoras, switches, roteadores e até a geladeira se bobear — tudo isso com organização, segurança e desempenho."
+    },
+    {
+      "char": "robot_2",
+      "mood": "normal",
+      "text": "E mais: cada tipo de cabo tem sua vibe. Tem o Cat5e mais básico, o Cat6 mais veloz e até a fibra óptica, que é tipo o flash das conexões 🦸♂️."
+    },
+    {
+      "char": "robot_2",
+      "mood": "normal",
+      "text": "Mas pra tudo funcionar direitinho, você precisa montar os cabos na ordem certa... E adivinha quem vai te ensinar isso jogando? 🐍"
+    },
+    {
+      "char": "robot_2",
+      "mood": "happy",
+      "text": "Bora fazer um quiz rápido e depois cair na rede! 😎"
+    }
+  ]
+}

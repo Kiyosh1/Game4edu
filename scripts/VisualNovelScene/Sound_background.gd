@@ -7,6 +7,8 @@ const sounds = {
 	"angry": preload("res://assets/BGM/beanfeast.mp3")
 }
 
+
+
 func play_sound(sound: String):
 	if sounds.has(sound):
 		stream = sounds[sound]

@@ -5,7 +5,8 @@ const CHARACTERS_FILES = {
 	"robot_2":{
 		"angry":preload("res://assets/Chars/robot_2/01.png"),
 		"sad":preload("res://assets/Chars/robot_2/02.png"),
-		"normal":preload("res://assets/Chars/robot_2/03.png")
+		"normal":preload("res://assets/Chars/robot_2/03.png"),
+		"happy":preload("res://assets/Chars/robot_2/04.png")
 	},
 	"emi":{
 		"angry":preload("res://assets/Chars/robot_2/01.png"),

@@ -1,17 +1,25 @@
+we
+
 extends Node2D
 
 @onready var container_btns = %VBoxContainer
 
 # Dicionário de ícones por tipo
 var type_icons = {
-	"historia": preload("res://assets/btn_icons/book_icon.svg"),
+	"historia": preload("res://assets/btn_icons/medal.svg"),
 	"quest": preload("res://assets/btn_icons/medal.svg"),
 	"game": preload("res://assets/btn_icons/game_icon.svg"),
 }
 
 var buttons = [
-	{"title": "Histórias", "type": "historia", "scene": "res://scenes/VisualNovel/Root_VN.tscn", "json_path": "res://scenes/VisualNovel/assets/dialogs/1.json"},
-	{"title": "Missões", "type": "quest", "scene": "res://scenes/VisualNovel/Root_VN.tscn", "json_path": "res://scenes/VisualNovel/assets/dialogs/2.json"}
+	{"title": "Degub", "type": "historia", "scene": "res://scenes/VisualNovel/Root_VN.tscn", "json_path": "res://scenes/VisualNovel/assets/dialogs/test.json"},
+	
+	{"title": "Histórias", "type": "historia", "scene": "res://scenes/VisualNovel/Root_VN.tscn", "json_path": "res://scenes/VisualNovel/assets/dialogs/V1.json"},
+	{"title": "Missões", "type": "quest", "scene": "res://scenes/VisualNovel/Root_VN.tscn", "json_path": "res://scenes/VisualNovel/assets/dialogs/V2.json"},
+	{"title": "Missões", "type": "quest", "scene": "res://scenes/VisualNovel/Root_VN.tscn", "json_path": "res://scenes/VisualNovel/assets/dialogs/V3.json"},
+		{"title": "Missões", "type": "quest", "scene": "res://scenes/VisualNovel/Root_VN.tscn", "json_path": "res://scenes/VisualNovel/assets/dialogs/V4.json"},
+			{"title": "Missões", "type": "quest", "scene": "res://scenes/VisualNovel/Root_VN.tscn", "json_path": "res://scenes/VisualNovel/assets/dialogs/V5.json"}
+			
 ]
 
 func _ready():
