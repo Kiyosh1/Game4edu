@@ -1,0 +1,79 @@
+[gd_scene load_steps=5 format=3 uid="uid://bjg4ld12lm7dj"]
+
+[ext_resource type="Script" uid="uid://b4my3pcja3yva" path="res://Interface/main_menu/menu.gd" id="1_kxtep"]
+[ext_resource type="FontFile" uid="uid://cii76tb7cjxkm" path="res://font/Aerospace.otf" id="1_q0ckw"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_kxtep"]
+font = ExtResource("1_q0ckw")
+font_size = 56
+font_color = Color(0.89419, 0.87356, 0.859919, 1)
+
+[sub_resource type="Theme" id="Theme_3n0a2"]
+default_font = ExtResource("1_q0ckw")
+default_font_size = 32
+
+[node name="Menu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_kxtep")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -5.0
+offset_right = -5.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.955827, 0.418634, 0.402075, 1)
+
+[node name="Title" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -189.0
+offset_top = -43.0
+offset_right = 189.0
+offset_bottom = 43.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Asajkdfa"
+label_settings = SubResource("LabelSettings_kxtep")
+
+[node name="ButtonsContainer" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_top = -182.0
+offset_right = 263.0
+grow_vertical = 0
+
+[node name="Dificuldade" type="Button" parent="ButtonsContainer" groups=["button"]]
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 4
+theme = SubResource("Theme_3n0a2")
+text = "Dificuldade"
+
+[node name="Opcoes" type="Button" parent="ButtonsContainer" groups=["button"]]
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 4
+theme = SubResource("Theme_3n0a2")
+text = "opções"
+
+[node name="Sair" type="Button" parent="ButtonsContainer" groups=["button"]]
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 4
+theme = SubResource("Theme_3n0a2")
+text = "Sair"
