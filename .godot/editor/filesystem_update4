@@ -1,0 +1,12 @@
+res://Interface/main_menu/menu.tscn
+res://Scenes/VisualNovel/Root_VN.tscn
+res://Scenes/VisualNovel/Scripts/Root_VN.gd
+res://Scenes/VisualNovel/Scripts/Sound_background.gd
+res://scenes/VisualNovel/thems/vn_text.tres
+res://scenes/VisualNovel/Root_VN.tscn
+res://scenes/VisualNovel/Scripts/Root_VN.gd
+res://scenes/GlobalValues.gd
+res://level.tscn
+res://level.gd
+res://scripts/VisualNovelScene/Character.gd
+res://scripts/VisualNovelScene/Root_VN.gd

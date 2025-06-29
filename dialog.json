@@ -1,0 +1,39 @@
+{
+  "dialogue": [
+    {
+      "character": "Lúcia",
+      "expression": "smile",
+      "text": "Boa tarde! Posso te ajudar com alguma coisa?"
+    },
+    {
+      "character": "Alex",
+      "expression": "serious",
+      "text": "Não... Eu só quero ver cabos CAT4."
+    },
+    {
+      "character": "Lúcia",
+      "expression": "confused",
+      "text": "CAT4? Isso é bem... antigo. Você tem certeza?",
+      "choices": [
+        {
+          "text": "Sim. Eu sei o que estou fazendo.",
+          "next_index": 3
+        },
+        {
+          "text": "Não. Talvez você tenha razão.",
+          "next_index": 4
+        }
+      ]
+    },
+    {
+      "character": "Alex",
+      "expression": "calm",
+      "text": "Sim. Eu sei o que estou fazendo."
+    },
+    {
+      "character": "Alex",
+      "expression": "sad",
+      "text": "Não. Talvez você tenha razão..."
+    }
+  ]
+}

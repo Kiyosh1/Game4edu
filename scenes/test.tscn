@@ -1,0 +1,15 @@
+[gd_scene load_steps=2 format=3 uid="uid://chlglmi2f2375"]
+
+[ext_resource type="Script" uid="uid://drurmxfpt5386" path="res://scenes/test.gd" id="1_bl13t"]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_bl13t")
+
+[node name="Button" type="Button" parent="."]
+offset_left = 355.0
+offset_top = 728.0
+offset_right = 634.0
+offset_bottom = 933.0
+text = "Clinchia oasdf"
+
+[connection signal="pressed" from="Button" to="." method="on_button_pressed"]

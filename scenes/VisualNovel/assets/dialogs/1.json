@@ -1,0 +1,56 @@
+{
+  "background": 1,
+  "song": "sad",
+  "dialogs": [
+    {
+      "char": "emi",
+      "mood": "sad",
+      "text": "chai... a internet caiu de novo. Tô começando a achar que meu roteador me odeia."
+    },
+    {
+      "char": "chai",
+      "mood": "normal",
+      "text": "Você por acaso tentou conectar o cabo de rede no filtro de linha de novo?"
+    },
+    {
+      "char": "emi",
+      "mood": "angry",
+      "text": "Olha, ele tinha um formato parecido, tá? Qualquer um erraria!"
+    },
+    {
+      "char": "chai",
+      "mood": "normal",
+      "text": "Claro, super fácil confundir energia elétrica com conexão de dados..."
+    },
+    {
+      "char": "emi",
+      "mood": "sad",
+      "text": "Pelo menos agora o cabo tá esquentando, deve estar funcionando, né?"
+    },
+    {
+      "char": "chai",
+      "mood": "angry",
+      "text": "EMI, CABOS DE REDE NÃO DEVIAM ESQUENTAR!"
+    },
+    {
+      "char": "emi",
+      "mood": "normal",
+      "text": "Ok, ok, vou tirar o CAT4 da torradeira..."
+    },
+    {
+      "char": "chai",
+      "mood": "normal",
+      "text": "Boa ideia. E depois vamos conversar sobre o que é um switch, sem você achar que é de luz."
+    },
+    {
+      "char": "emi",
+      "mood": "angry",
+      "text": "Ei! Não é minha culpa se tudo nesse mundo tecnológico tem nome confuso!"
+    },
+    {
+      "char": "chai",
+      "mood": "normal",
+      "text": "Confuso é o seu computador rodando a 2kbps com um cabo feito de barbante."
+    }
+  ]
+}

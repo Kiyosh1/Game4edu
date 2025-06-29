@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://cukc3bdfvqgql"]
+
+[ext_resource type="Theme" uid="uid://cxxjqcf7i7rqh" path="res://scenes/VisualNovel/thems/vn_text.tres" id="1_2i0a4"]
+
+[node name="Button" type="Button"]
+custom_minimum_size = Vector2(600, 40)
+theme = ExtResource("1_2i0a4")
+text = "This is a choice"

@@ -1,0 +1,47 @@
+{
+  "background": 4,
+  "song": "drama",
+  "dialogs": [
+    {
+      "char": "robot_2",
+      "mood": "sad",
+      "text": "quem é o melhor"
+    },
+
+    {
+      "choices": [
+        { "text": "palmeiras", "goto": "1" },
+        { "text": "corinthians", "goto": "2" }
+      ],
+      "id": "time"
+    },
+    { "anchor": "1", "isRight": false },
+
+    {
+      "char": "robot_2",
+      "mood": "normal",
+      "text": "não tem mundial"
+    },
+    { "goto": "afther_1_choice", "idBefore": "time" },
+
+    { "anchor": "2", "isRight": true },
+    {
+      "char": "robot_2",
+      "mood": "angry",
+      "text": "fujio de bangu"
+    },
+    { "goto": "afther_1_choice", "idBefore": "time" },
+
+    { "anchor": "afther_1_choice" },
+    {
+      "char": "robot_2",
+      "mood": "normal",
+      "text": "bye"
+    },
+    {
+      "char": "robot_2",
+      "mood": "normal",
+      "text": "user"
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+[gd_scene load_steps=6 format=3 uid="uid://b480o7wfghtb5"]
+
+[ext_resource type="Script" uid="uid://b5y8g176mfo8" path="res://scripts/VisualNovelScene/Root_VN.gd" id="1_rdouu"]
+[ext_resource type="PackedScene" uid="uid://dheuelvd681fa" path="res://scenes/VisualNovel/Dialog_box.tscn" id="2_nlxfq"]
+[ext_resource type="Texture2D" uid="uid://yd3ns8s4tp2u" path="res://scenes/VisualNovel/assets/backgrounds/00_default.png" id="2_rdouu"]
+[ext_resource type="PackedScene" uid="uid://cwhwk1thxxg3t" path="res://scenes/VisualNovel/Character.tscn" id="3_sxcos"]
+[ext_resource type="Script" uid="uid://cd0r5isttdirq" path="res://scripts/VisualNovelScene/Sound_background.gd" id="5_yn2x5"]
+
+[node name="VN" type="Node2D"]
+script = ExtResource("1_rdouu")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+layer = -128
+
+[node name="background" type="TextureRect" parent="CanvasLayer"]
+unique_name_in_owner = true
+z_index = 20
+z_as_relative = false
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 9.0
+offset_top = -19.0
+offset_right = 59.0
+offset_bottom = 22.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_rdouu")
+
+[node name="DialogUi" parent="." instance=ExtResource("2_nlxfq")]
+unique_name_in_owner = true
+top_level = true
+z_index = 30
+
+[node name="CharLayer" type="CanvasLayer" parent="."]
+layer = -19
+follow_viewport_enabled = true
+
+[node name="Control" type="Control" parent="CharLayer"]
+layout_mode = 3
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -20.0
+offset_top = -40.0
+offset_right = 20.0
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="Char" parent="CharLayer/Control" instance=ExtResource("3_sxcos")]
+unique_name_in_owner = true
+position = Vector2(0, -300)
+scale = Vector2(2, 2)
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+unique_name_in_owner = true
+script = ExtResource("5_yn2x5")

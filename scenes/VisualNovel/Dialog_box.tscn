@@ -1,0 +1,105 @@
+[gd_scene load_steps=8 format=3 uid="uid://dheuelvd681fa"]
+
+[ext_resource type="Theme" uid="uid://cxxjqcf7i7rqh" path="res://scenes/VisualNovel/thems/vn_text.tres" id="1_2vbo8"]
+[ext_resource type="Script" uid="uid://bxitohcl4cxdh" path="res://scripts/VisualNovelScene/Dialog_Box.gd" id="2_bdibh"]
+[ext_resource type="Script" uid="uid://dtha8s4vdgwo5" path="res://scripts/VisualNovelScene/Sound_Dialog.gd" id="3_jb6ja"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_2vbo8"]
+content_margin_left = 19.0
+content_margin_top = 20.0
+content_margin_right = 20.0
+content_margin_bottom = 20.0
+bg_color = Color(0.101961, 0.101961, 0.101961, 0.701961)
+
+[sub_resource type="Theme" id="Theme_bdibh"]
+PanelContainer/styles/panel = SubResource("StyleBoxFlat_2vbo8")
+
+[sub_resource type="Theme" id="Theme_2vbo8"]
+Label/styles/normal = null
+
+[sub_resource type="LabelSettings" id="LabelSettings_2vbo8"]
+font_color = Color(0.0475577, 0.0475576, 0.0475576, 1)
+
+[node name="DialogUI" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("1_2vbo8")
+script = ExtResource("2_bdibh")
+
+[node name="TextSound" type="AudioStreamPlayer" parent="."]
+unique_name_in_owner = true
+script = ExtResource("3_jb6ja")
+
+[node name="ChoicesContainer" type="CenterContainer" parent="."]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="ChoicesContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_constants/separation = 20
+
+[node name="dialogBox" type="PanelContainer" parent="."]
+custom_minimum_size = Vector2(0, 300)
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_bottom = 300.0
+grow_horizontal = 2
+theme = SubResource("Theme_bdibh")
+
+[node name="Dialog" type="RichTextLabel" parent="dialogBox"]
+unique_name_in_owner = true
+layout_mode = 2
+text = "tlorem Ipsumtloremrem Ipsumtlorem Ipsumtlorem Ipsumtlorem Ipsumtlorem Ipsumtlorem Ipsum "
+
+[node name="SpeakerBox" type="Control" parent="."]
+custom_minimum_size = Vector2(500, 50)
+layout_mode = 1
+anchors_preset = 0
+offset_left = -32.0
+offset_top = 300.0
+offset_right = 468.0
+offset_bottom = 350.0
+
+[node name="Polygon2D" type="Polygon2D" parent="SpeakerBox"]
+position = Vector2(31, -1)
+color = Color(0.858824, 0.819608, 0.286275, 1)
+polygon = PackedVector2Array(0, 0, 400, 0, 314.155, 40, 0, 40)
+
+[node name="CharacterName" type="Label" parent="SpeakerBox"]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 38.0
+offset_top = -16.0
+offset_right = 165.0
+offset_bottom = 7.0
+grow_vertical = 2
+theme = SubResource("Theme_2vbo8")
+text = "Character Name"
+label_settings = SubResource("LabelSettings_2vbo8")
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -40.0
+offset_bottom = 40.0
+grow_horizontal = 0
+
+[node name="Polygon2D" type="Polygon2D" parent="Control"]
+position = Vector2(0, 251.355)
+polygon = PackedVector2Array(0, 0, 30, 20, 0, 40)

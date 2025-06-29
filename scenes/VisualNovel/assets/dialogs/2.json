@@ -1,0 +1,56 @@
+{
+  "background": 2,
+  "song": "funny",
+  "dialogs": [
+    {
+      "char": "emi",
+      "mood": "normal",
+      "text": "chai, o que acontece se eu plugar um cabo de rede na entrada de fone de ouvido?"
+    },
+    {
+      "char": "chai",
+      "mood": "angry",
+      "text": "acontece que você vai ouvir o som da rede chorando."
+    },
+    {
+      "char": "emi",
+      "mood": "sad",
+      "text": "então era por isso que só saía chiado..."
+    },
+    {
+      "char": "chai",
+      "mood": "normal",
+      "text": "emi, por que tem fita adesiva segurando seu roteador na parede?"
+    },
+    {
+      "char": "emi",
+      "mood": "normal",
+      "text": "é pra pegar sinal mais alto, ué. quanto mais alto, mais internet, certo?"
+    },
+    {
+      "char": "chai",
+      "mood": "angry",
+      "text": "isso é um roteador, não uma antena parabólica!"
+    },
+    {
+      "char": "emi",
+      "mood": "normal",
+      "text": "funcionou com o controle remoto da TV..."
+    },
+    {
+      "char": "chai",
+      "mood": "sad",
+      "text": "às vezes me pergunto se a rede caiu ou se fui eu que desisti."
+    },
+    {
+      "char": "emi",
+      "mood": "angry",
+      "text": "pra que serve um cabo de 30 metros se não posso ir até o mercado com ele conectado?"
+    },
+    {
+      "char": "chai",
+      "mood": "normal",
+      "text": "isso aí é internet com fio delivery?"
+    }
+  ]
+}

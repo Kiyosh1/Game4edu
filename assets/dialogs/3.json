@@ -1,0 +1,63 @@
+{
+  "background": 3,
+  "song": "drama",
+  "dialogs": [
+    {
+      "char": "emi",
+      "mood": "normal",
+      "text": "chai, eu organizei todos os cabos da rede com lacres de pão. ficou lindo!"
+    },
+    {
+      "char": "chai",
+      "mood": "angry",
+      "text": "emi... você basicamente amarrou a internet com lixo reciclável."
+    },
+    { "goto": "possChoice" },
+    {
+      "char": "emi",
+      "mood": "sad",
+      "text": "mas pelo menos agora os cabos estão felizes... ou pelo menos coloridos."
+    },
+    {
+      "char": "chai",
+      "mood": "normal",
+      "text": "e eu achando que o caos vinha dos usuários. não, vem da estética."
+    },
+    {
+      "char": "emi",
+      "mood": "normal",
+      "text": "organizei por categoria também! os cabos lentos estão no canto triste."
+    },
+    { "anchor": "possChoice" },
+    {
+      "char": "chai",
+      "mood": "angry",
+      "text": "Anchor"
+    },
+    {
+      "char": "chai",
+      "mood": "angry",
+      "text": "‘canto triste’? emi, você criou uma zona de luto pro CAT5?!"
+    },
+    {
+      "char": "emi",
+      "mood": "normal",
+      "text": "sim! coloquei até uma plaquinha: 'aqui jazem os megabits'."
+    },
+    {
+      "char": "chai",
+      "mood": "sad",
+      "text": "isso explica por que nem o ping quis passar por ali..."
+    },
+    {
+      "char": "emi",
+      "mood": "normal",
+      "text": "relaxa, chai. amanhã organizo tudo com fitas de natal!"
+    },
+    {
+      "char": "chai",
+      "mood": "angry",
+      "text": "o espírito natalino não conserta pacotes perdidos!"
+    }
+  ]
+}
